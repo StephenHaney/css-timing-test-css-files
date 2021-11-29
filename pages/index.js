@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          CSS as CSS files
+          <span className="use-a-style-in-the-page">CSS in the JS Bundle</span>
         </h1>
 
         <p className={styles.description}>
