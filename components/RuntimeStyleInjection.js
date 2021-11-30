@@ -48006,9 +48006,9 @@ const RuntimeStyleInjection = () => {
   let count = 0;
   for (const styledFunc of styledFunctions) {
     count += 1;
-    // document.styleSheets[0].insertRule(styledFunc());
+    document.styleSheets[0].insertRule(styledFunc());
   }
-  // console.log(count);
+  console.log(count);
 
   // Add one more to actually use on the page
   document.styleSheets[0].insertRule(
