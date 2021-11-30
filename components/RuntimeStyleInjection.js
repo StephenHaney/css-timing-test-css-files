@@ -42013,7 +42013,7 @@ const RuntimeStyleInjection = () => {
         /[A-Z]/g,
         (capital) => "-" + capital.toLowerCase()
       );
-      cssString += `${propertyNameCSS}: ${styleObject[propertyName]} `;
+      cssString += `${propertyNameCSS}: ${styleObject[propertyName]}; `;
     }
     cssString += "} ";
 
