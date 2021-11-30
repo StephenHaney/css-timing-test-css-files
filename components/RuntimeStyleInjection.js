@@ -48005,6 +48005,7 @@ const RuntimeStyleInjection = () => {
   // Invoke all the styled functions and add them to the DOM using insertRule
   for (const styledFunc of styledFunctions) {
     document.styleSheets[0].insertRule(styledFunc());
+    console.log("inserted!");
   }
 
   // Add one more to actually use on the page
