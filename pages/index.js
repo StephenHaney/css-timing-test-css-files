@@ -13,7 +13,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <span className="use-a-style-in-the-page">CSS in the JS Bundle</span>
+          <span className="use-a-style-in-the-page">
+            CSS in the JS Bundle - objects
+          </span>
         </h1>
 
         <p className={`${styles.description} class-2`}>
