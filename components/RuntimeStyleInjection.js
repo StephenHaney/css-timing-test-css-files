@@ -42003,27 +42003,27 @@ styledFunctions.push(generateClass2999);
 
 const RuntimeStyleInjection = () => {
   // Invoke all the styled functions and add them to the DOM using insertRule
-  for (let i = 0; i < 3000; i++) {
-    // Transform the object into a string:
-    let cssString = `.class-${i}{`;
-    const styleObject = styledFunctions[i]();
-    for (const propertyName of Object.keys(styleObject)) {
-      // CSS case property names
-      const propertyNameCSS = propertyName.replace(
-        /[A-Z]/g,
-        (capital) => "-" + capital.toLowerCase()
-      );
-      cssString += `${propertyNameCSS}: ${styleObject[propertyName]}; `;
-    }
-    cssString += "} ";
+  // for (let i = 0; i < 3000; i++) {
+  //   // Transform the object into a string:
+  //   let cssString = `.class-${i}{`;
+  //   const styleObject = styledFunctions[i]();
+  //   for (const propertyName of Object.keys(styleObject)) {
+  //     // CSS case property names
+  //     const propertyNameCSS = propertyName.replace(
+  //       /[A-Z]/g,
+  //       (capital) => "-" + capital.toLowerCase()
+  //     );
+  //     cssString += `${propertyNameCSS}: ${styleObject[propertyName]}; `;
+  //   }
+  //   cssString += "} ";
 
-    document.styleSheets[0].insertRule(cssString);
+  //   document.styleSheets[0].insertRule(cssString);
 
-    // Just a sanity check to make sure it's all firing
-    if (i === 2999) {
-      console.log(i);
-    }
-  }
+  //   // Just a sanity check to make sure it's all firing
+  //   if (i === 2999) {
+  //     console.log(i);
+  //   }
+  // }
 
   // Add one more to actually use on the page
   document.styleSheets[0].insertRule(
